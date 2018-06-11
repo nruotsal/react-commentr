@@ -1,0 +1,66 @@
+{
+  "name": "react-commentr",
+  "version": "1.0.0",
+  "description": "React comments component",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "npm run test:jest && npm run test:nightwatch",
+    "test:nightwatch": "cd ./tests && nightwatch",
+    "test:jest": "jest --coverage ./src",
+    "lint": "eslint ./src",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "watch": "NODE_ENV=development webpack-dev-server --config webpack.watch.config.js",
+    "preversion": "npm config set tag-version-prefix ''",
+    "version": "npm run build && git add -f ./dist/index.js",
+    "postversion": "git push --tags && git push",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nruotsal/react-commentr.git"
+  },
+  "author": "Niko Ruotsalainen",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/react": "4.0.0-alpha.8",
+    "babel-core": "6.26.3",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "7.1.4",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "chromedriver": "2.40.0",
+    "clean-webpack-plugin": "0.1.19",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.9.1",
+    "jest": "23.1.0",
+    "nightwatch": "0.9.21",
+    "prop-types": "15.6.1",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "uglifyjs-webpack-plugin": "1.2.5",
+    "url-loader": "1.0.1",
+    "webpack": "4.12.0",
+    "webpack-cli": "3.0.3",
+    "webpack-dev-server": "3.1.4"
+  },
+  "peerDependencies": {
+    "prop-types": "15.x",
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "styled-components": "3.3.2"
+  }
+}
