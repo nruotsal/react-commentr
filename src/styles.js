@@ -15,3 +15,8 @@ export const CommentContainer = styled.div`
   width: 100%;
   margin-bottom: 20px;
 `
+
+export const TimestampContainer = styled.div`
+  width: 100%;
+  margin-bottom: 20px;
+`

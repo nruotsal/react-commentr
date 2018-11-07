@@ -8,7 +8,7 @@ Enzyme.configure({adapter: new Adapter()})
 
 describe('Comment component', () => {
   it('should render itself', () => {
-    const props = { message: 'This is a comment message' }
+    const props = { message: 'This is a comment message', timestamp: '2018-01-01T01:01:01', locale: 'en-US' }
     const comment = render(<Comment {...props} />)
 
     expect(comment).toBeDefined()
