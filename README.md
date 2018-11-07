@@ -1,10 +1,14 @@
-# react-commentr
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+
+# React Commentr
+
+React comments component
 
 ## Development
 
 0. `npm install`
 1. `npm run watch`
-2. Open https://localhost:3001 with your favourite browser
+2. Open http://localhost:3001 with your favourite browser
 
 In development environment this project use [Webpack dev server](https://webpack.github.io/docs/webpack-dev-server.html) to serve Commentr.
 
