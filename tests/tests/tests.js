@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   after: browser => browser.end(),
 
   'Should render comments': browser => {

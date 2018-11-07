@@ -9,9 +9,11 @@ module.exports = {
   },
   test_settings: {
     default: {
-      selenium_port: 9515,
-      selenium_host: 'localhost',
-      default_path_prefix: '',
+      webdriver: {
+        host: 'localhost',
+        port: 9515,
+        default_path_prefix: ''
+      },
       globals: {
         waitForConditionTimeout: 5000
       },
