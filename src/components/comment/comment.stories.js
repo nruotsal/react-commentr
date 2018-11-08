@@ -6,6 +6,7 @@ import Comment from './comment'
 
 const props = {
   locale: 'en-US',
+  user: 'Alice',
   timestamp: '2018-01-01T01:01:01',
   message: 'This is a comment'
 }

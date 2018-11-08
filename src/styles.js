@@ -20,3 +20,8 @@ export const TimestampContainer = styled.div`
   width: 100%;
   margin-bottom: 20px;
 `
+
+export const UserContainer = styled.div`
+  width: 100%;
+  margin-bottom: 5px;
+`
