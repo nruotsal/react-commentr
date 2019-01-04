@@ -8,7 +8,9 @@ import { Container } from './styles'
 const Commentr = props => (
   <Container>
     <Form />
-    {props.comments.map(comment => <Comment key={comment.id} {...comment} locale={props.locale} />)}
+    {props.comments.map(comment =>
+      <Comment key={comment.id} {...comment} locale={props.locale} />
+    )}
   </Container>
 )
 
