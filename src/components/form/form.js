@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   FormContainer,
   ÌnputLabel,
@@ -7,10 +8,10 @@ import {
   SubmitButton
 } from '../../styles'
 
-const Form = () => {
+const Form = props => {
   return (
     <FormContainer>
-      <form>
+      <form onSubmit={props.addComment}>
         <ÌnputLabel htmlFor='username'>Username:</ÌnputLabel>
         <UserInput placeholder='Username' />
         <ÌnputLabel htmlFor='comment'>Comment:</ÌnputLabel>
@@ -19,6 +20,10 @@ const Form = () => {
       </form>
     </FormContainer>
   )
+}
+
+Form.propTypes = {
+  addComment: PropTypes.func.isRequired
 }
 
 export default Form
