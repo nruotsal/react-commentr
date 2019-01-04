@@ -1,10 +1,10 @@
 import React from 'react'
-import Enzyme, {render} from 'enzyme'
+import Enzyme, { render } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 import Comment from './comment'
 
-Enzyme.configure({adapter: new Adapter()})
+Enzyme.configure({ adapter: new Adapter() })
 
 describe('Comment component', () => {
   it('should render itself', () => {

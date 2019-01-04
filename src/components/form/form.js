@@ -12,7 +12,7 @@ const Form = () => {
     <FormContainer>
       <form>
         <ÌnputLabel htmlFor='username'>Username:</ÌnputLabel>
-        <UserInput placeholder='Username'/>
+        <UserInput placeholder='Username' />
         <ÌnputLabel htmlFor='comment'>Comment:</ÌnputLabel>
         <CommentInput placeholder='Comment' required />
         <SubmitButton>Submit</SubmitButton>

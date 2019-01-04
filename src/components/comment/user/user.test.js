@@ -1,10 +1,10 @@
 import React from 'react'
-import Enzyme, {render} from 'enzyme'
+import Enzyme, { render } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 import User from './user'
 
-Enzyme.configure({adapter: new Adapter()})
+Enzyme.configure({ adapter: new Adapter() })
 
 describe('User component', () => {
   it('should render itself with default props', () => {

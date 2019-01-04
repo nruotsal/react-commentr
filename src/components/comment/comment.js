@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import {CommentContainer} from '../../styles'
+import { CommentContainer } from '../../styles'
 import Timestamp from './timestamp/timestamp'
 import User from './user/user'
 
 const Comment = (props) => {
-  const {message, timestamp, locale, username} = props
+  const { message, timestamp, locale, username } = props
   const dateTime = new Date(timestamp)
   return (
     <CommentContainer>

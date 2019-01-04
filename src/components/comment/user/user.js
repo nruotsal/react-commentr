@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import {UserContainer} from '../../../styles'
+import { UserContainer } from '../../../styles'
 
 const User = (props) => {
-  const {username} = props
+  const { username } = props
   return (
     <UserContainer>
       {username}
