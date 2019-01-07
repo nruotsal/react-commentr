@@ -16,7 +16,12 @@ const props = {
       username: 'Bob',
       message: 'Maecenas in dapibus enim. Integer feugiat a ex sed egestas. Vestibulum eu ante turpis. Sed pharetra fringilla rutrum. Integer rhoncus, urna sit amet tristique bibendum, lorem leo mattis ipsum, ut gravida metus dui eleifend quam. Fusce lobortis ex tortor, ut vehicula elit vestibulum nec. Nulla vitae pharetra leo.'
     }
-  ]
+  ],
+  addComment: (username, message) => Promise.resolve({
+    timestamp: (new Date()).toJSON(),
+    username,
+    message
+  })
 }
 
 render(<Commentr {...props} />, document.getElementById('root'))

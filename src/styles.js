@@ -59,3 +59,9 @@ export const SubmitButton = styled.button.attrs({
   width: 100px;
   margin: 5px;
 `
+
+export const Error = styled.div`
+  width: 100%;
+  margin: 10px 0;
+  color: red;
+`
